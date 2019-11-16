@@ -1,3 +1,3 @@
 # Awesome Neon Button
 
-![](assets/neon.gif)
+<img src="assets/neon.gif" width= auto heigth= auto>
