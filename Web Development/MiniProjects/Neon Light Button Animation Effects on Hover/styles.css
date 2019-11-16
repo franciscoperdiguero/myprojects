@@ -1,13 +1,20 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 100vh;
     background: #031321;
     font-family: consolas;
@@ -23,14 +30,17 @@ a{
     text-decoration: none;
     font-size: 32px;
     overflow: hidden;
+    -webkit-transition: 0.2s;
     transition: 0.2s;
 }
 
 a:hover{
     color: #255784;
     background: #2196f3;
-    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
-    transition-delay: 1s;
+    -webkit-box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+            box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+    -webkit-transition-delay: 1s;
+            transition-delay: 1s;
 }
 
 a span {
@@ -43,11 +53,13 @@ a span:nth-child(1){
     left: -100%;
     width: 100%;
     height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(transparent), to(#2196f3));
     background: linear-gradient(90deg, transparent, #2196f3);
 }
 
 a:hover span:nth-child(1){
     left: 100%;
+    -webkit-transition: 1s;
     transition: 1s;
 }
 /*Second span*/
@@ -56,13 +68,16 @@ a span:nth-child(2){
     right: 0;
     width: 2px;
     height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#2196f3));
     background: linear-gradient(180deg, transparent, #2196f3);
 }
 
 a:hover span:nth-child(2){
     top: 100%;
+    -webkit-transition: 1s;
     transition: 1s;
-    transition-delay: 0.25s;
+    -webkit-transition-delay: 0.25s;
+            transition-delay: 0.25s;
 }
 
 /*Third span*/
@@ -71,13 +86,16 @@ a span:nth-child(3){
     right: -100%;
     width: 100%;
     height: 2px;
+    background: -webkit-gradient(linear, right top, left top, from(transparent), to(#2196f3));
     background: linear-gradient(270deg, transparent, #2196f3);
 }
 
 a:hover span:nth-child(3){
     right: 100%;
+    -webkit-transition: 1s;
     transition: 1s;
-    transition-delay: 0.5s;
+    -webkit-transition-delay: 0.5s;
+            transition-delay: 0.5s;
 }
 
 /*Fourth span*/
@@ -86,11 +104,14 @@ a span:nth-child(4){
     left: 0;
     width: 2px;
     height: 100%;
+    background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#2196f3));
     background: linear-gradient(360deg, transparent, #2196f3);
 }
 
 a:hover span:nth-child(4){
     bottom: 100%;
+    -webkit-transition: 1s;
     transition: 1s;
-    transition-delay: 0.75s;
+    -webkit-transition-delay: 0.75s;
+            transition-delay: 0.75s;
 }
