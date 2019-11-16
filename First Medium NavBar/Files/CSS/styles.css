@@ -1,0 +1,145 @@
+﻿*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding-top: 55px; 
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    background: #4357ad;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.menu{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .logo{
+    display: inline-block;
+    color: white;
+}
+
+.menu .btn-menu {
+    display: none;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.menu .enlaces{
+    display: inline-block;
+}
+
+.menu .enlaces a{
+    color:#fff;
+    display: inline-block;
+    text-align: center;
+    font-size: 1em;
+    padding: 1em;
+}
+
+.menu .enlaces a:hover{
+    background: #f2f2f2;
+    color: #4357ad;
+}
+
+main{
+    width: 90%;
+    margin: 20px auto;
+    max-width: 1000px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+}
+
+main article h1{
+    font-weight: normal;
+    margin-bottom: .5em;
+}
+
+main article hr{
+    margin-bottom: 1em;
+    height: 2px;
+    background: #4357ad;
+    border: none;
+}
+
+main article p{
+    margin-bottom: 1em;
+}
+
+/* Efectos de la barra nav*/
+
+.headroom{
+    transition: transform .3s ease-in-out;
+}
+
+.headroom--pinned{
+    transform: translateY(0%);
+}
+
+.headroom--unpinned{
+    transform: translateY(-100%);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 700px){
+    header .menu{
+        flex-direction: column;
+    }
+
+    header .menu .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+        padding: 1em;
+    }
+
+    header .menu .logo .btn-menu{
+        display: inline-block;
+        color: white;
+        margin-right: 27vw;
+    }
+
+    header .menu .logo h1{
+        text-align: left;
+    }
+
+    header .menu .enlaces{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    header .menu .enlaces a{
+        opacity: 0;
+        transition: opacity 1.2s ease-in-out;
+    }
+
+    header .menu .enlaces a:hover{
+        background: #fff;
+        color: #4357ad;
+    }
+}

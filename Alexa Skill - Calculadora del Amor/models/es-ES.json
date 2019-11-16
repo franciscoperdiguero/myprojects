@@ -1,0 +1,169 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "la calculadora del amor",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetLoveIntent",
+                    "slots": [
+                        {
+                            "name": "fName",
+                            "type": "AMAZON.Person",
+                            "samples": [
+                                "pues a {fName} con {sName}",
+                                "pues a {fName}",
+                                "{fName} con {sName}",
+                                "es {fName} y {sName}",
+                                "es {fName}",
+                                "{fName}"
+                            ]
+                        },
+                        {
+                            "name": "sName",
+                            "type": "AMAZON.Person",
+                            "samples": [
+                                "{sName}",
+                                "pues es {sName}",
+                                "es {fName} y {sName}",
+                                "es {sName}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "pues {fName}",
+                        "{fName} y {sName}",
+                        "sobre {fName}",
+                        "entre {fName}",
+                        "{fName} con {sName}",
+                        "entre {fName} y {sName}",
+                        "cual es el porcentaje de amor entre {fName} y {sName}",
+                        "cual es la compatibilidad entre {fName} y {sName}",
+                        "dime la compatibilidad entre {fName} y  {sName}",
+                        "la compatibilidad entre {fName} y {sName}",
+                        "el porcentaje entre {fName} y {sName}",
+                        "dime el porcentaje de amor entre {fName} y {sName}",
+                        "dime el porcentaje entre {fName} y {sName}",
+                        "calcula el porcentaje entre {fName} y {sName}",
+                        "calcula el porcentaje de amor entre {fName} y {sName}",
+                        "sobre {fName} con {sName}",
+                        "sobre {fName} y {sName}",
+                        "el porcentaje de amor entre {fName} y {sName}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                }
+            ],
+            "types": []
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "GetLoveIntent",
+                    "delegationStrategy": "ALWAYS",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.751154495838"
+                    },
+                    "slots": [
+                        {
+                            "name": "fName",
+                            "type": "AMAZON.Person",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.714808044643.514775795749"
+                            }
+                        },
+                        {
+                            "name": "sName",
+                            "type": "AMAZON.Person",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.714808044643.1036533110015"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "delegationStrategy": "ALWAYS"
+        },
+        "prompts": [
+            {
+                "id": "Confirm.Intent.751154495838",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "¿Quieres qué calcule el porcentaje de amor entre {fName} y {sName} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.751154495838.1087778757182",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "No has introducido el segundo nombre, hazlo."
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "La primera persona es {fName} , cual es la segunda?"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Necesito saber el nombre de la persona con la que quieres calcular el amor con {fName}"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.392898705458.1082860778406",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Necesito el nombre de la primera persona, por favor."
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.714808044643.514775795749",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Vale, necesito conocer ahora el nombre de una nueva persona para evaluarla con {sName}"
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": "Necesito conocer el nombre de ambas personas"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.714808044643.1036533110015",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Necesito conocer el nombre de ambas personas, por favor."
+                    },
+                    {
+                        "type": "PlainText",
+                        "value": " Vale, necesito conocer ahora el nombre de una nueva persona para evaluarla con {fName}"
+                    }
+                ]
+            }
+        ]
+    }
+}

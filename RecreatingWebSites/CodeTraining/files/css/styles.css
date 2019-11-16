@@ -1,0 +1,222 @@
+@font-face {
+    font-family: cubano;
+    src: url(../fonts/cubano-regular-webfont.woff2);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .02em;
+    line-height: 1.4;
+    color: #222;
+    font-size: 1.6rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(9,20,154,0.55);
+}
+
+header .btn-menu{
+    color: white;
+    display: none;
+}
+
+header .navbar{
+    overflow: hidden;
+    width: 100%;
+    margin: 10px auto;
+    padding: 0 18px;
+    font-size: 16px;
+}
+
+header .navbar .link-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+}
+
+header .navbar a{
+    color: #fff;
+    max-width: 115rem;
+    margin: 0 16px;
+    padding: 0 2px;
+
+    border: 1px solid transparent;
+    border-radius: 2px;
+    font-family: "cubano";
+    letter-spacing: .4;
+    text-decoration: none;
+}
+
+header .navbar a:hover{
+    text-shadow: 0 0 5px #FFFFFF;
+}
+
+
+/*Main*/
+
+main{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+}
+
+main .header-img{
+    height: 245px;
+    margin-bottom: 5rem;
+    background-image: url(../img/header.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+main .content{
+    text-align: center;
+}
+
+
+
+
+/*Media querries*/
+@media screen and (max-width: 550px){
+    
+    main{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+
+    main .content{
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+
+    main .header-img{
+        height: 100px;
+        margin-bottom: 5rem;
+        background-image: url(../img/header-mobile.jpeg);
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    header{
+        top: 20px;
+        position: fixed;
+        background: none;
+    }
+
+    header .btn-menu{
+        width: 70px;
+        height: 60px;
+        display: block;
+        position: fixed;
+        z-index: 1;
+        background: #1E7EA4;
+        cursor: pointer;
+        border-radius: 0px 5px 5px 0px;
+    }
+
+    header .btn-menu i{
+        padding:.50em 0 0 .55em;
+    }
+    
+    header .navbar{
+        padding:0 0 0 18px;
+        margin: 0;
+        height: auto;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+
+    header .navbar.active{
+        background: rgba(255,255,255,0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+    }
+
+    header .navbar .link-container{
+        margin-top: 100px;
+        overflow: hidden;
+        height: auto;
+        width: auto;
+        font-size: 16px;
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+    }
+
+    .nonedisplay{
+        display:none;
+    }
+    
+    header .navbar .link-container a{
+        color: #fff;
+        background:#1E7EA4;
+        padding: 10px;
+        margin: 8px 0;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        font-family: "cubano";
+        letter-spacing: .4;
+        text-decoration: none;
+    }
+
+}
