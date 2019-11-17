@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(120deg,#ffb142,#33d9b2);
+    height: 100vh;
+    max-width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.inputText{
+    display: flex;
+    justify-content: center;
+    margin: 20px 10px;
+}
+
+.inputText input{
+    width: 90%;
+    margin-right: 20px;
+    border: none;
+    border-bottom: 2px solid #389ed5;
+    background: none;
+    color: black;
+    padding: 10px;
+    font-size: 20px;
+    outline: none;
+}
+
+.inputText #btn1{
+    width: 10%;
+    height: auto;
+    background: linear-gradient(to bottom, #4eb5e5 0%,#389ed5 100%); /* W3C */
+    border: none;
+    border-radius: 5px;
+    border-bottom: 4px solid #2b8bc6;
+    color: #fbfbfb;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.4);
+    font-size: 15px;
+    text-indent: 5px;
+    box-shadow: 0px 3px 0px 0px rgba(0,0,0,.2);
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+}
+
+.remainingTask, .completedTask{
+    padding: 20px;
+}
+
+h3{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+hr{
+    margin: 20px 0 20px 0;
+}
+
+.task{
+    padding: 18px;
+    background: rgba(255,255,255,0.5);
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.task i{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.completedTask .task{
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}

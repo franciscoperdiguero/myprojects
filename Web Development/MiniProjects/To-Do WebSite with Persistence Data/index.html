@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-Do Website with Persistence Data</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+</head>
+
+<body>
+
+    <div class="inputText">
+        <input type="text" placeholder="Añade una nueva tarea a la lista...">
+        <button id="btn1">Añadir</button>
+    </div>
+
+    <div class="remainingTask">
+        <h3>Not Completed</h3>
+
+        <div class="task">
+            <label>Tarea 1</label>
+            <div class="wrapIcons">
+                <i class="fas fa-check"></i>
+                <i class="fas fa-trash"></i>
+            </div>
+        </div>
+
+        <div class="task">
+            <label>Tarea 2</label>
+            <div class="wrapIcons">
+                <i class="fas fa-check"></i>
+                <i class="fas fa-trash"></i>
+            </div>
+        </div>
+
+        <div class="task">
+            <label>Tarea 3</label>
+            <div class="wrapIcons">
+                <i class="fas fa-check"></i>
+                <i class="fas fa-trash"></i>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="completedTask">
+        <h3>Completed</h3>
+        <div class="task">
+            <label>Tarea 5</label>
+            <i class="fas fa-trash"></i>
+        </div>
+
+        <div class="task">
+            <label>Tarea 6</label>
+            <i class="fas fa-trash"></i>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
