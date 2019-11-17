@@ -8,10 +8,11 @@
 
 body{
     background-image: linear-gradient(120deg,#ffb142,#33d9b2);
-    height: 100vh;
+    background-attachment:fixed;
+    height:100%;
     max-width: 90%;
     margin: auto;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .inputText{
