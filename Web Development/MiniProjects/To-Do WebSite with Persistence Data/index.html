@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>To-Do Website with Persistence Data</title>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-firestore.js"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 </head>
@@ -13,7 +15,7 @@
 <body>
 
     <div class="inputText">
-        <input type="text" placeholder="Añade una nueva tarea a la lista...">
+        <input id="inTask" type="text" placeholder="Añade una nueva tarea a la lista...">
         <button id="btn1">Añadir</button>
     </div>
 
@@ -26,9 +28,29 @@
     <div class="completedTask">
         <h3>Completed</h3>
     </div>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBLn2hkDTEpPPQVn6cjGKmoiTkDxfurKZs",
+            authDomain: "to-dofp.firebaseapp.com",
+            databaseURL: "https://to-dofp.firebaseio.com",
+            projectId: "to-dofp",
+            storageBucket: "to-dofp.appspot.com",
+            messagingSenderId: "802646182398",
+            appId: "1:802646182398:web:6566177290b89fa79558af",
+            measurementId: "G-KHC7EX9LS8"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        const db = firebase.firestore();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="script.js"></script>
 </body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-<script src="script.js"></script>
+
 
 </html>

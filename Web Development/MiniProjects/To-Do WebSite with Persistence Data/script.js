@@ -1,5 +1,5 @@
 
-const inputText = $(".inputText input");
+var inputText = $(".inputText input");
 const button = $(".inputText #btn1")
 
 const notCompleted = $(".remainingTask");
@@ -20,6 +20,10 @@ $(document).on("click", ".task .fa-trash", (e) => {
 
 $(document).on("click", ".task .fa-check", (e) => {
     var p = $(e.currentTarget.parentNode.parentNode);
+    var name = p.find("label").text();
+
+    databaseRemove(name);
+
     p.find(".fa-check").remove();
 
     p.fadeOut(function () {
@@ -38,6 +42,7 @@ function removeTask(e) {
 }
 
 function addATask(e) {
+    e.preventDefault();
     if ((e.keyCode == 13 || e.button == 0) && inputText.val() != "") {
 
         let tick = $("<i class=\"fas fa-check\"></i>");
@@ -48,6 +53,26 @@ function addATask(e) {
         let task = $("<div class='task'></div>").append(name, icons);
         notCompleted.append(task);
 
+        db.collection('doneTasks').add({
+            done: inputText.val()
+        });
+
         inputText.val("");
     }
 };
+
+function databaseRemove(name) {
+
+    db.collection('doneTasks').get().then((snapshots) => {
+        snapshots.docs.forEach(doc => {
+            if (doc.data().done == name) {
+                db.collection('doneTasks').doc(doc.id).delete();
+                db.collection('undoneTasks').add({
+                    undone: name
+                });
+            }
+        });
+    });
+
+};
+
