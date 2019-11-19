@@ -50,11 +50,10 @@ function addATask(e) {
     e.preventDefault();
     if ((e.keyCode == 13 || e.button == 0) && inputText.val() != "") {
 
-
+        var task = createTask(inputText.val(), false);
         notCompleted.append(task);
-
         db.collection('undoneTasks').add({
-            done: inputText.val()
+            task: inputText.val()
         });
 
         inputText.val("");
