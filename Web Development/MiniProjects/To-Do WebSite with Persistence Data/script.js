@@ -27,8 +27,6 @@ $(document).on("click", ".task .fa-check", (e) => {
     var p = $(e.currentTarget.parentNode.parentNode);
     var name = p.find("label").text();
 
-    databaseRemove(name);
-
     p.find(".fa-check").remove();
 
     p.fadeOut(function () {
