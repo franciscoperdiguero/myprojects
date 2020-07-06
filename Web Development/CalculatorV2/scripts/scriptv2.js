@@ -159,8 +159,8 @@ function standardMode() {
         $(".numbers").css("grid-template-columns", "repeat(4, 1fr)");
         flag.standardMode = true;
         flag.scientificMode = false;
-        closeNav();
     }
+    closeNav();
 }
 
 function scientificMode() {
@@ -169,6 +169,6 @@ function scientificMode() {
         $(".numbers").css("grid-template-columns", "repeat(5, 1fr)");
         flag.scientificMode = true;
         flag.standardMode = false;
-        closeNav();
     }
+    closeNav();
 }
