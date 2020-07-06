@@ -1,0 +1,137 @@
+*{
+    font-size: 65%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.pageWrapper{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DCEDC1;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #81C784;
+    color: white;
+}
+
+header span{
+    display: flex;
+    font-size: 3rem;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+header h1{
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 1.9rem;
+    padding: 15px 0;
+}
+
+.calculator{
+    display: flex;
+    width: 450px;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.calculatorScreen{
+    width: 100%;
+    height: 80px;
+    border: none;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 10px;
+    font-size: 4rem;
+}
+
+.screen{
+    border: 0.1px solid #252525;
+    border-radius: 0.25rem;
+}
+
+button {
+    height: 60px;
+    font-size: 2rem!important;
+  }
+
+.backspace{
+    color: white;
+    font-size: 2.5rem!important;
+}
+
+.equal{
+    background-color: #81C784;
+    font-size: 2.5rem!important;
+}
+
+.numbers{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px; 
+    background-color: #c9c9c9;
+}
+
+.scientific{
+    display: none;
+}
+
+/* EXTRA STYLE FOR SIDE MENU*/
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: absolute; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    border-top: 1px solid #c9c9c9;
+    background-color:rgb(130, 209, 134); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    text-align: center;
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  .main{
+      position: relative;
+      transition: margin-left .5s;
+  }
