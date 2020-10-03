@@ -1,0 +1,22 @@
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\bin\Debug\Twoo.exe.config
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\bin\Debug\Twoo.exe.manifest
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\bin\Debug\Twoo.application
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\bin\Debug\Twoo.exe
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\bin\Debug\Twoo.pdb
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\bin\Debug\Master Engine.dll
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\bin\Debug\Master Engine.pdb
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo.csprojAssemblyReference.cache
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\MainWindow.g.cs
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\App.g.cs
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo_MarkupCompile.cache
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo_MarkupCompile.lref
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\MainWindow.baml
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo.g.resources
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo.Properties.Resources.resources
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo.csproj.GenerateResource.cache
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo.csproj.CoreCompileInputs.cache
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo.exe.manifest
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo.application
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo.csproj.CopyComplete
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo.exe
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo.pdb
