@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Twoo"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Twoo" Height="auto" Width="auto">
     <Grid>
-        <WebBrowser x:Name="Main_Webbrowser"/>
+        <Frame x:Name="Main_Frame" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
     </Grid>
 </Window>

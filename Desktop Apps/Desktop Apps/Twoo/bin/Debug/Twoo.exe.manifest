@@ -54,14 +54,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Twoo.exe" size="9184">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Twoo.exe" size="12256">
       <assemblyIdentity name="Twoo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QtbRKE30DbH/QcNzi+GOLfNHp1kUHQAxdU1F0P1M+M8=</dsig:DigestValue>
+        <dsig:DigestValue>9w+zwTArjLhl0TVsce01BNLXUQzwXhzWfgnlYo0EQCk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

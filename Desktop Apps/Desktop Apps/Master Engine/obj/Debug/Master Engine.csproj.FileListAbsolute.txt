@@ -1,5 +1,6 @@
 F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Master Engine\bin\Debug\Master Engine.dll
 F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Master Engine\bin\Debug\Master Engine.pdb
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Master Engine\obj\Debug\Master Engine.csprojAssemblyReference.cache
 F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Master Engine\obj\Debug\Master Engine.csproj.CoreCompileInputs.cache
 F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Master Engine\obj\Debug\Master Engine.dll
 F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Master Engine\obj\Debug\Master Engine.pdb

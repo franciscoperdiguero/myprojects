@@ -20,3 +20,7 @@ F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo.
 F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo.csproj.CopyComplete
 F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo.exe
 F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo.pdb
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Input_Parameters.g.cs
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo_Start_Page.g.cs
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Input_Parameters.baml
+F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Twoo\obj\Debug\Twoo_Start_Page.baml
