@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Twoo"
         mc:Ignorable="d"
-        Title="Twoo" Height="auto" Width="auto">
+        Title="Twoo">
     <Grid>
         <Frame x:Name="Main_Frame" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
     </Grid>

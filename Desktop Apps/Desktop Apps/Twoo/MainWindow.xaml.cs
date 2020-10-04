@@ -27,11 +27,15 @@ namespace Twoo
             Instantiate_Program();
         }
 
-
-
-        private void Instantiate_Program()
+        public void Instantiate_Program()
         {
-            Main_Frame.Source = new Uri("Input_Parameters.xaml");
+            this.Width = Screen.PrimaryScreen.WorkingArea.Width;
+            this.Height = Screen.PrimaryScreen.WorkingArea.Height;
+            this.Left = 0;
+            this.Top = 0;
+            this.WindowState = WindowState.Normal;
+
+            Main_Frame.Source = new Uri("Input_Parameters.xaml", UriKind.RelativeOrAbsolute);
         }
     }
 }

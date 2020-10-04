@@ -9,6 +9,13 @@
       Title="Twoo_Start_Page">
 
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+        </Grid.RowDefinitions>        
+        <Label Name="status_Label" Grid.Row="0" Foreground="blue" Content="--" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <WebBrowser Name="Main_Web" Grid.Row="1"/>
+        <Label Name="button_start_stop" Grid.Row="2" Content="Start" Background="Green" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
     </Grid>
 </Page>

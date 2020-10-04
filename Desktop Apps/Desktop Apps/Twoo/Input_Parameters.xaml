@@ -4,15 +4,43 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:Twoo"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
+      mc:Ignorable="d" d:DesignWidth="1080" d:DesignHeight="830"
       Title="Input_Parameters">
 
+    <!-- MinWidth="1080" MinHeight="830"-->
     <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition/>
-            <RowDefinition Height="9*"/>
-        </Grid.RowDefinitions>
-        <Label Name="Paco_name" Grid.Row="0" Margin="0,0,0,7.8" />
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF2281D1"/>
+                <GradientStop Color="#FF34268A" Offset="1"/>
+                <GradientStop Color="#FF33288B" Offset="0.546"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Image Source="Assets/icon.png" Width="100" Height="100" VerticalAlignment="Top" Margin="0,70,0,0"/>
+        <Label Content="Introduce Twoo Credentials and Message" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="376,170,369,0" Foreground="Black" FontSize="18" FontWeight="Bold"/>
+
+        <Rectangle Width="448" Height="477" HorizontalAlignment="Center" VerticalAlignment="Center" RadiusY="10" RadiusX="10" Fill="White" Margin="316,153,316,36">
+            <Rectangle.Effect>
+                <DropShadowEffect BlurRadius="15" Direction="0" RenderingBias="Quality" ShadowDepth="1" Color="#FFBBBBBB"/>
+            </Rectangle.Effect>
+        </Rectangle>
+
+        <Grid VerticalAlignment="Center" Margin="35,153,35,36" Height="477">
+
+            <Grid HorizontalAlignment="Center" Margin="15,15,16,37">
+                <Label Name="Error_Message" FontWeight="Bold" Foreground="#DDD30000" Margin="340,-5,338.4,392.8"></Label>
+                <Label Content="Username" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="340,37,551.4,0" Foreground="Gray" FontSize="18"/>
+                <TextBox x:Name="Username_Box" Width="300" Height="30" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="340,74,338.4,320.8" BorderThickness="1" SelectionBrush="#FF0078D7"/>
+                <Label Content="Password" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="340,126,557.4,0" Foreground="Gray" FontSize="18"/>
+                <PasswordBox x:Name="Password_Box" Width="300" Height="30" Margin="340,163,338.4,231.8" FontFamily="Champagne &amp; Limousines" FontSize="18" MaxLength="20" BorderThickness="1"/>
+                <Label Content="Message" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="340,215,560.4,0" Foreground="Gray" FontSize="18"/>
+                <TextBox x:Name="Message_Box" Width="300" FontFamily="Champagne &amp; Limousines" FontSize="14" Margin="340,252,338.4,26.8" TextWrapping="Wrap" ForceCursor="True" BorderThickness="1"/>
+            </Grid>
+            <Button Name="Start_Button"  Width="307" HorizontalAlignment="Center" Click="Btn_Click_Start" VerticalAlignment="Bottom" FontSize="18" Content="Start" Margin="355,0,348,5" FontWeight="Normal"/>
+        </Grid>
+       
     </Grid>
+
+
 </Page>
