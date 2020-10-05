@@ -31,11 +31,9 @@ namespace Twoo
         {
             this.Width = Screen.PrimaryScreen.WorkingArea.Width;
             this.Height = Screen.PrimaryScreen.WorkingArea.Height;
-            this.Left = 0;
-            this.Top = 0;
-            this.WindowState = WindowState.Normal;
+            this.WindowState = WindowState.Maximized;
 
-            Main_Frame.Source = new Uri("Input_Parameters.xaml", UriKind.RelativeOrAbsolute);
+            webview.Source = new Uri("Input_Parameters.xaml", UriKind.RelativeOrAbsolute);
         }
     }
 }

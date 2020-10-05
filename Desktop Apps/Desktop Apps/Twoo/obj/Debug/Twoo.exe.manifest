@@ -78,17 +78,62 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Twoo.exe" size="57312">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Web.WebView2.Core.dll" size="102288">
+      <assemblyIdentity name="Microsoft.Web.WebView2.Core" version="0.9.628.0" publicKeyToken="2A8AB48044D2601E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xpBuXtpSRLZabd3T0ow53trdSGc/JMnyyogdRNsE8kQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Web.WebView2.WinForms.dll" size="23952">
+      <assemblyIdentity name="Microsoft.Web.WebView2.WinForms" version="0.9.628.0" publicKeyToken="2A8AB48044D2601E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kmhog1YCMor2YpLSKYZ9e3j9WmoVGi0fJ/EyZwrE4B4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.Web.WebView2.Wpf.dll" size="30096">
+      <assemblyIdentity name="Microsoft.Web.WebView2.Wpf" version="0.9.628.0" publicKeyToken="2A8AB48044D2601E" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>dUxlKjXapec0G3056aBNDpqiBV/igCvoRFHKSZMru4M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Twoo.exe" size="57824">
       <assemblyIdentity name="Twoo" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>/6hzoqTK5kqeF3a/UXp3l76M9/V1ZnrKaxItZ5ICFKo=</dsig:DigestValue>
+        <dsig:DigestValue>9dbEjENz/KICcPYI8Bex+t66pYUOktFu+d//0V9yw4c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="arm64\WebView2Loader.dll" size="124816">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Q4IL4EYMKQh+WPyEoOoYi8CCqilFs0j3jyzn66g1MrE=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Twoo.exe.config" size="189">
     <hash>
       <dsig:Transforms>
@@ -96,6 +141,24 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="x64\WebView2Loader.dll" size="136592">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cSi+y6XVlxuoL4qw9pTgexlzRZMhtuBmt90maclbBoM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="x86\WebView2Loader.dll" size="109968">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dBqLDaw7bjdAeK7U8ZZurEqr+ZGL+7XWhbeAeg7FhzQ=</dsig:DigestValue>
     </hash>
   </file>
 </asmv1:assembly>

@@ -23,6 +23,7 @@ namespace Twoo
     public partial class Twoo_Start_Page : Page
     {
         private static string URL = "https://twoo.com/?login=1#login";
+        private int firstime = 0;
         public Twoo_Start_Page()
         {
             InitializeComponent();
@@ -33,39 +34,43 @@ namespace Twoo
         {
             status_Label.Content = "Loading Twoo...";
             Main_Web.Navigate(URL);
-            Main_Web.LoadCompleted += Main_Web_LoadCompleted;
+            if (firstime == 0)
+            {
+                Main_Web.LoadCompleted += Main_Web_LoadCompleted;
+                firstime++;
+            }
         }
 
         private void Main_Web_LoadCompleted(object sender, NavigationEventArgs e)
         {
-            status_Label.Content = "Connected";
-            mshtml.HTMLDocument doc = (mshtml.HTMLDocument)Main_Web.Document;
-            var Raw_Email_Boxes = doc.getElementsByName("email");
-            var Emails_Box_List = Raw_Email_Boxes.OfType<mshtml.HTMLInputElement>().ToList();
-            int eCount1 = Emails_Box_List.Count();
-            Emails_Box_List[eCount1 - 1].innerText = Engine.getUsername();
+            //if (firstime == 0) {
+                status_Label.Content = "Connected";
+                mshtml.HTMLDocument doc = (mshtml.HTMLDocument)Main_Web.Document;
+                var Raw_Email_Boxes = doc.getElementsByName("email");
+                var Emails_Box_List = Raw_Email_Boxes.OfType<mshtml.HTMLInputElement>().ToList();
+                int eCount1 = Emails_Box_List.Count();
+                Emails_Box_List[eCount1 - 1].innerText = Engine.getUsername();
 
-            var Raw_Password_Boxes = doc.getElementsByName("password");
-            var Password_Box_List = Raw_Password_Boxes.OfType<mshtml.HTMLInputElement>().ToList();
-            int eCount2 = Password_Box_List.Count();
-            Password_Box_List[eCount2 - 1].innerText = Engine.getPassword();
+                var Raw_Password_Boxes = doc.getElementsByName("password");
+                var Password_Box_List = Raw_Password_Boxes.OfType<mshtml.HTMLInputElement>().ToList();
+                int eCount2 = Password_Box_List.Count();
+                Password_Box_List[eCount2 - 1].innerText = Engine.getPassword();
 
-            var Raw_Input = doc.getElementsByTagName("input");
-            var Input_List = Raw_Input.OfType<mshtml.HTMLInputElement>().ToList();
-            var Login_Button_List = new List<mshtml.HTMLInputElement>();
-            for (int i = 0; i < Input_List.Count(); i++)
-            {
-                if (Input_List[i].getAttribute("type") == "submit")
+                var Raw_Input = doc.getElementsByTagName("input");
+                var Input_List = Raw_Input.OfType<mshtml.HTMLInputElement>().ToList();
+                var Login_Button_List = new List<mshtml.HTMLInputElement>();
+                for (int i = 0; i < Input_List.Count(); i++)
                 {
-                    Login_Button_List.Add(Input_List[i]);
+                    if (Input_List[i].getAttribute("type") == "submit")
+                    {
+                        Login_Button_List.Add(Input_List[i]);
+                    }
                 }
-            }
 
-            int eCount3 = Login_Button_List.Count();
-            Login_Button_List[eCount3 - 1].click();
-
-
-
+                int eCount3 = Login_Button_List.Count();
+                //Login_Button_List[eCount3 - 1].click();
+                firstime = 1;
+          //  }
 
 
         }
