@@ -16,6 +16,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Text.RegularExpressions;
 using System.Windows.Media.Converters;
+using System.Windows.Forms;
+using System.IO;
+using OpenFileDialog = System.Windows.Forms.OpenFileDialog;
 
 namespace Twoo
 {
@@ -35,19 +38,18 @@ namespace Twoo
             resetStatusComponents();
             bool error = false;
             bool validEmail = false;
-            bool introducedPass = false;
             bool introducedMessage = false;
-            if (Valid_Email(Username_Box.Text)) {
+            if (Valid_Email(Username_Box.Text))
+            {
                 validEmail = true;
-            }else error = true;
+            }
+            else error = true;
 
-            if (Password_Box.Password != "") {
-                introducedPass = true;
-            }else error = true;
-
-            if (Message_Box.Text != "") {
+            if (Message_Box.Text != "")
+            {
                 introducedMessage = true;
-            }else error = true;
+            }
+            else error = true;
 
 
             if (error == true)
@@ -59,11 +61,6 @@ namespace Twoo
                     err += "Wrong Email.";
                     Username_Box.BorderBrush = Brushes.Red;
                 }
-                if (!introducedPass)
-                {
-                    err += "Empty Password.";
-                    Password_Box.BorderBrush = Brushes.Red;
-                }
                 if (!introducedMessage)
                 {
                     err += "Empty Message.";
@@ -72,13 +69,13 @@ namespace Twoo
                 Error_Message.Content = err;
                 Error_Message.Visibility = Visibility.Visible;
             }
-            else {
+            else
+            {
 
                 bool u = Engine.setUsername(Username_Box.Text);
-                bool p = Engine.setPassword(Password_Box.Password);
                 bool m = Engine.setMessage(Message_Box.Text);
 
-                if(u && p && m)
+                if (u && m)
                 {
                     NavigationService ns = NavigationService.GetNavigationService(this);
                     ns.Navigate(new Uri("Twoo_Start_Page.xaml", UriKind.RelativeOrAbsolute));
@@ -87,11 +84,11 @@ namespace Twoo
 
         }
 
-        private void resetStatusComponents() {
+        private void resetStatusComponents()
+        {
             Error_Message.Visibility = Visibility.Hidden;
             var color = Color.FromArgb(100, 0, 120, 215);
             Username_Box.BorderBrush = new SolidColorBrush(color);
-            Password_Box.BorderBrush = new SolidColorBrush(color);
             Message_Box.BorderBrush = new SolidColorBrush(color);
         }
 
@@ -116,5 +113,37 @@ namespace Twoo
             }
         }
 
+        private void Btn_Open_Browser_File(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog theDialog = new OpenFileDialog();
+            theDialog.Title = "Open Text File";
+            theDialog.Filter = "txt files|*.txt";
+            theDialog.InitialDirectory = @"C:\";
+            if (theDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filename = theDialog.FileName;
+                File_selected.Content = theDialog.SafeFileName;
+                string[] filelines = File.ReadAllLines(filename);
+
+                List<string> emails = new List<string>();
+                List<string> directLinks = new List<string>();
+
+                for (int i = 0; i < filelines.Length; i++) {
+                    if (filelines[i].Contains("@"))
+                    {
+                        emails.Add(filelines[i]);
+                    }
+                    else if (filelines[i].Contains("twoo")) {
+                        directLinks.Add(filelines[i]);
+                    }
+                }
+
+
+                Username_Box.ItemsSource = emails;
+
+                
+            }
+
+        }
     }
 }

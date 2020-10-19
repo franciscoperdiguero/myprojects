@@ -21,6 +21,6 @@
             <wv2:WebView2 Name="Main_Web" Source="https://www.google.com"/>
         </DockPanel>-->
         
-        <Label Name="button_start_stop" Grid.Row="2" Content="Start" Background="Green" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Name="button_start_stop" Grid.Row="2" Content="Stop" Background="Red" HorizontalContentAlignment="Center" Cursor="Hand" VerticalContentAlignment="Center"/>
     </Grid>
 </Page>
