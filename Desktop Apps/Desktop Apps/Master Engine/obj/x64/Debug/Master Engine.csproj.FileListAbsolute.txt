@@ -6,7 +6,6 @@ F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Master Engine\obj\x6
 F:\Repositories\Github\myprojects\Desktop Apps\Desktop Apps\Master Engine\obj\x64\Debug\Master Engine.pdb
 D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Master Engine\bin\x64\Debug\Master Engine.dll
 D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Master Engine\bin\x64\Debug\Master Engine.pdb
-D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Master Engine\obj\x64\Debug\Master Engine.csprojAssemblyReference.cache
 D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Master Engine\obj\x64\Debug\Master Engine.csproj.CoreCompileInputs.cache
 D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Master Engine\obj\x64\Debug\Master Engine.dll
 D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Master Engine\obj\x64\Debug\Master Engine.pdb
