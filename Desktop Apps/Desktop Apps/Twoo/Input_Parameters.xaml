@@ -30,9 +30,9 @@
 
             <Grid HorizontalAlignment="Center" Margin="15,15,16,37">
                 <Label Name="Error_Message" FontWeight="Bold" Foreground="#DDD30000" Margin="340,-5,338.4,392.8"></Label>
-                <Button Name="Browse_Button"  Width="186" HorizontalAlignment="Center" Click="Btn_Open_Browser_File" VerticalAlignment="Center" FontSize="18" Content="Browse for a file..." FontWeight="Normal" Margin="340,37,452.4,360.8"/>
-                <Label Name="File_selected" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="531,37,306.4,0" Foreground="Gray" FontSize="18" Width="141"/>
-                <Label Content="Username" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="340,92,513.4,0" Foreground="Gray" FontSize="18" Width="125"/>
+                <Button Name="Browse_Button"  Width="300" HorizontalAlignment="Center" Click="Btn_Open_Browser_File" VerticalAlignment="Center" FontSize="18" Content="Browse for a file..." FontWeight="Normal" Margin="340,38,339.333,360.333"/>
+                <Label Name="File_selected" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="340,70,339.333,0" Foreground="Gray" FontSize="18" Width="300"/>
+                <Label Content="Select an username" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="340,169,338.333,0" Foreground="Gray" FontSize="18" Width="301"/>
                 <ComboBox x:Name="Username_Box"   
                                     Width="300"   
                                     Height="28"  
@@ -44,11 +44,8 @@
                                     Background="Transparent"  
                                     Foreground="Black"  
                                     IsEditable="false"   
-                                    Margin="340,131,338.4,0"/>
+                                    Margin="340,223,338.667,0"/>
                 <!--<TextBox x:Name="Username_Box" Width="300" Height="30" FontFamily="Champagne &amp; Limousines" FontSize="18" Margin="340,75,338.4,319.8" BorderThickness="1" SelectionBrush="#FF0078D7"/>-->
-
-                <Label Content="Message" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="340,164,513.4,0" Foreground="Gray" FontSize="18" Width="125"/>
-                <TextBox x:Name="Message_Box" Width="300" FontFamily="Champagne &amp; Limousines" FontSize="14" Margin="340,203,338.4,26.8" TextWrapping="Wrap" ForceCursor="True" BorderThickness="1"/>
             </Grid>
             <Button Name="Start_Button"  Width="307" HorizontalAlignment="Center" Click="Btn_Click_Start" VerticalAlignment="Bottom" FontSize="18" Content="Start" Margin="355,0,348,5" FontWeight="Normal"/>
         </Grid>

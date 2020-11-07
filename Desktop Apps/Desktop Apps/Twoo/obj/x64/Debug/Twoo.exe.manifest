@@ -50,7 +50,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Q22hi1d5U1/w+moqSkJiWuNj8lKQU2pWlcRCtYnE4u0=</dsig:DigestValue>
+        <dsig:DigestValue>OSZKTpCLrGkZJ32XjFu/2g/SR548Ff7nAJE+MEcEV30=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -115,14 +115,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Twoo.exe" size="284128">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Twoo.exe" size="283104">
       <assemblyIdentity name="Twoo" version="1.0.0.0" language="neutral" processorArchitecture="amd64" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ppRp8JNYdk9y0++LDmBZK54E7kNoQ3coc0jrDErIil4=</dsig:DigestValue>
+        <dsig:DigestValue>POUVtOjRRYfosdGhYqRM6JCARnggSM/43X/hYmkE2lo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -28,6 +28,10 @@ namespace Twoo
     public partial class Input_Parameters : Page
     {
 
+        #region variables
+        Dictionary<String, Dictionary<String, String>> data;
+        #endregion
+
         public Input_Parameters()
         {
             InitializeComponent();
@@ -38,16 +42,9 @@ namespace Twoo
             resetStatusComponents();
             bool error = false;
             bool validEmail = false;
-            bool introducedMessage = false;
             if (Valid_Email(Username_Box.Text))
             {
                 validEmail = true;
-            }
-            else error = true;
-
-            if (Message_Box.Text != "")
-            {
-                introducedMessage = true;
             }
             else error = true;
 
@@ -58,24 +55,34 @@ namespace Twoo
 
                 if (!validEmail)
                 {
-                    err += "Wrong Email.";
+                    err += "Please, select an email.";
                     Username_Box.BorderBrush = Brushes.Red;
-                }
-                if (!introducedMessage)
-                {
-                    err += "Empty Message.";
-                    Message_Box.BorderBrush = Brushes.Red;
                 }
                 Error_Message.Content = err;
                 Error_Message.Visibility = Visibility.Visible;
             }
             else
             {
+                String user = String.Empty;
+                String msg = String.Empty;
+                String link = String.Empty;
 
-                bool u = Engine.setUsername(Username_Box.Text);
-                bool m = Engine.setMessage(Message_Box.Text);
+                bool u = false;
+                bool m = false;
+                bool l = false;
 
-                if (u && m)
+                if ((user = Username_Box.Text) != String.Empty) {
+                    u = Engine.setUsername(user);
+                }
+                if ((msg = data[Username_Box.Text].Keys.ToList<string>()[0]) != String.Empty) { 
+                    m = Engine.setMessage(msg);
+                }
+
+                if ((link = data[Username_Box.Text].Values.ToList<string>()[0]) != String.Empty) { 
+                    l = Engine.setDirectLink(link);
+                }
+          
+                if (u && m && l)
                 {
                     NavigationService ns = NavigationService.GetNavigationService(this);
                     ns.Navigate(new Uri("Twoo_Start_Page.xaml", UriKind.RelativeOrAbsolute));
@@ -89,7 +96,6 @@ namespace Twoo
             Error_Message.Visibility = Visibility.Hidden;
             var color = Color.FromArgb(100, 0, 120, 215);
             Username_Box.BorderBrush = new SolidColorBrush(color);
-            Message_Box.BorderBrush = new SolidColorBrush(color);
         }
 
         private Boolean Valid_Email(String email)
@@ -125,23 +131,21 @@ namespace Twoo
                 File_selected.Content = theDialog.SafeFileName;
                 string[] filelines = File.ReadAllLines(filename);
 
-                List<string> emails = new List<string>();
-                List<string> directLinks = new List<string>();
+                data = new Dictionary<string, Dictionary<string, string>>();
 
-                for (int i = 0; i < filelines.Length; i++) {
-                    if (filelines[i].Contains("@"))
+                int i = 0;
+                while (i < filelines.Length) {
+
+                    if (filelines[i].Contains("@") && filelines[i].Length < 30)
                     {
-                        emails.Add(filelines[i]);
+                        Dictionary<String, String> aux = new Dictionary<string, string>();
+                        aux.Add(filelines[i + 1], filelines[i + 2]);
+                        data.Add(filelines[i], aux);
+                        i += 3;
                     }
-                    else if (filelines[i].Contains("twoo")) {
-                        directLinks.Add(filelines[i]);
-                    }
+                    i++;
                 }
-
-
-                Username_Box.ItemsSource = emails;
-
-                
+                Username_Box.ItemsSource = data.Keys.ToList<string>();
             }
 
         }

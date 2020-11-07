@@ -26,7 +26,7 @@ namespace Twoo
     public partial class Twoo_Start_Page : System.Windows.Controls.Page
     {
         #region useful variables
-        readonly string direct_login_url = "https://www.twoo.com/mailurl/aT0yaGgtd3o4MWVyLTN2Znl6ZzlnLXc3MjYmbD0yJnU9JTJGY29uZmlybSUyRiUzRmVtYWlsJTNEdmljYXRlbGxhJTI1NDBnbXguZGUlMjZjb2RlJTNENDEyMDI3YjM5ZWI4ZmI1M2JhMGVlN2Y0NTllNzZlZTAlMjZvcmlnaW4lM0RSRUdJU1RSQVRJT05fRk9STSslMjZyZWdpc3RyYXRpb25TdWNjZXNzJTNEMSZ0PTEmdWk9MTYwMDg0OTU1Mzg1MTEtMTk5NDA3OTI2Ny0xJTJGNyUyRjIlMkY4ODImYT03dTVjcWtfNmZiZGNkYzQ0YQ";
+        readonly string direct_login_url = Engine.getDirectLink();
         readonly string logout_url = "https://www.twoo.com/login/?action=logout&amp;lng=de";
         readonly string google = "https://www.google.com";
         readonly string Twoo_messages_url = "https://www.twoo.com/messages";
