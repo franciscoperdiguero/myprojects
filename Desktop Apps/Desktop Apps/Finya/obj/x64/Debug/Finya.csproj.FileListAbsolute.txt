@@ -1,0 +1,26 @@
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\bin\x64\Debug\Finya.exe.config
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\bin\x64\Debug\Finya.exe
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\bin\x64\Debug\Finya.pdb
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\bin\x64\Debug\Master Engine.dll
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\bin\x64\Debug\MaterialDesignColors.dll
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\bin\x64\Debug\MaterialDesignThemes.Wpf.dll
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\bin\x64\Debug\Master Engine.pdb
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\bin\x64\Debug\MaterialDesignColors.pdb
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\bin\x64\Debug\MaterialDesignThemes.Wpf.pdb
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\bin\x64\Debug\MaterialDesignThemes.Wpf.xml
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya.csprojAssemblyReference.cache
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Input_Parameters.g.cs
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\MainWindow.g.cs
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\App.g.cs
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya_MarkupCompile.cache
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya_MarkupCompile.lref
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\App.baml
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Input_Parameters.baml
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\MainWindow.baml
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya.g.resources
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya.Properties.Resources.resources
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya.csproj.GenerateResource.cache
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya.csproj.CoreCompileInputs.cache
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya.csproj.CopyComplete
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya.exe
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya.pdb

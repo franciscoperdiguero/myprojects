@@ -17,8 +17,8 @@
             </LinearGradientBrush>
         </Grid.Background>
 
-        <Image Source="Assets/icon.png" Width="100" Height="100" VerticalAlignment="Top" Margin="0,70,0,0"/>
-        <Label Content="Open Finya Data File" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="448,170,427,0" Foreground="Black" FontSize="18" FontWeight="Bold" Width="205"/>
+        <Image Source="Assets/icon.png" Height="142" VerticalAlignment="Top" Margin="470,59,468,0"/>
+        <Label Content="Open Finya Data File" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="446,201,429,0" Foreground="Black" FontSize="18" FontWeight="Bold" Width="205"/>
 
         <Rectangle Width="448" Height="477" HorizontalAlignment="Center" VerticalAlignment="Center" RadiusY="10" RadiusX="10" Fill="White" Margin="316,153,316,36">
             <Rectangle.Effect>
