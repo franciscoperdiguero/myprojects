@@ -24,3 +24,5 @@ D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya.c
 D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya.csproj.CopyComplete
 D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya.exe
 D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya.pdb
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya_Start_Page.baml
+D:\Repositorios\myprojects\Desktop Apps\Desktop Apps\Finya\obj\x64\Debug\Finya_Start_Page.g.cs

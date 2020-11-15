@@ -11,7 +11,7 @@ namespace Master_Engine
     public static class Engine
     {
         private static string username;
-        private static string directLink;
+        private static string password = "ssssss";
         private static string message;
 
         public static bool setUsername(string usr) {
@@ -35,15 +35,15 @@ namespace Master_Engine
             return message;
         }
 
-        public static bool setDirectLink(string link)
-        {
-            directLink = link;
-            return true;
-        }
+        //public static bool setPassword(string pass)
+        //{
+        //    password = pass;
+        //    return true;
+        //}
 
-        public static string getDirectLink()
+        public static string getPassword()
         {
-            return directLink;
+            return password;
         }
 
         public static void Suppress_scripts(WebBrowser the_browser)

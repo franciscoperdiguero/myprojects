@@ -29,7 +29,7 @@ namespace Finya
     {
 
         #region variables
-        Dictionary<String, Dictionary<String, String>> data;
+        Dictionary<String, String> data;
         #endregion
 
         public Input_Parameters()
@@ -41,10 +41,10 @@ namespace Finya
         {
             resetStatusComponents();
             bool error = false;
-            bool validEmail = false;
-            if (Valid_Email(Username_Box.Text))
+            bool validUsername = false;
+            if (!Username_Box.Text.Equals(String.Empty))
             {
-                validEmail = true;
+                validUsername = true;
             }
             else error = true;
 
@@ -53,9 +53,9 @@ namespace Finya
             {
                 string err = "";
 
-                if (!validEmail)
+                if (!validUsername)
                 {
-                    err += "Please, select an email.";
+                    err += "Please, select an username.";
                     Username_Box.BorderBrush = Brushes.Red;
                 }
                 Error_Message.Content = err;
@@ -65,27 +65,21 @@ namespace Finya
             {
                 String user = String.Empty;
                 String msg = String.Empty;
-                String link = String.Empty;
 
                 bool u = false;
                 bool m = false;
-                bool l = false;
 
                 if ((user = Username_Box.Text) != String.Empty) {
                     u = Engine.setUsername(user);
                 }
-                if ((msg = data[Username_Box.Text].Keys.ToList<string>()[0]) != String.Empty) { 
+                if ((msg = data[Username_Box.Text]) != String.Empty) { 
                     m = Engine.setMessage(msg);
                 }
-
-                if ((link = data[Username_Box.Text].Values.ToList<string>()[0]) != String.Empty) { 
-                    l = Engine.setDirectLink(link);
-                }
           
-                if (u && m && l)
+                if (u && m)
                 {
                     NavigationService ns = NavigationService.GetNavigationService(this);
-                    ns.Navigate(new Uri("Twoo_Start_Page.xaml", UriKind.RelativeOrAbsolute));
+                    ns.Navigate(new Uri("Finya_Start_Page.xaml", UriKind.RelativeOrAbsolute));
                 }
             }
 
@@ -96,27 +90,6 @@ namespace Finya
             Error_Message.Visibility = Visibility.Hidden;
             var color = Color.FromArgb(100, 0, 120, 215);
             Username_Box.BorderBrush = new SolidColorBrush(color);
-        }
-
-        private Boolean Valid_Email(String email)
-        {
-            String expresion;
-            expresion = "\\w+([-+.']\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
-            if (Regex.IsMatch(email, expresion))
-            {
-                if (Regex.Replace(email, expresion, String.Empty).Length == 0)
-                {
-                    return true;
-                }
-                else
-                {
-                    return false;
-                }
-            }
-            else
-            {
-                return false;
-            }
         }
 
         private void Btn_Open_Browser_File(object sender, RoutedEventArgs e)
@@ -131,17 +104,15 @@ namespace Finya
                 File_selected.Content = theDialog.SafeFileName;
                 string[] filelines = File.ReadAllLines(filename);
 
-                data = new Dictionary<string, Dictionary<string, string>>();
+                data = new Dictionary<string, string>();
 
                 int i = 0;
                 while (i < filelines.Length) {
 
-                    if (filelines[i].Contains("@") && filelines[i].Length < 30)
+                    if (filelines[i].Length < 20)
                     {
-                        Dictionary<String, String> aux = new Dictionary<string, string>();
-                        aux.Add(filelines[i + 1], filelines[i + 2]);
-                        data.Add(filelines[i], aux);
-                        i += 3;
+                        data.Add(filelines[i], filelines[i+1]);
+                        i += 2;
                     }
                     i++;
                 }
